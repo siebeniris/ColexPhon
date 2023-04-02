@@ -14,15 +14,17 @@ def get_synsets_langs(inputfolder="~/LangSim/data/linguistic_features/langdfs",
         writepath = os.path.join(outputfolder, file)
         if not os.path.exists(writepath):
             print(f"processing file {filepath}")
+            try:
+                df = pd.read_csv(filepath, lineterminator='\n', low_memory=False)
+                df[["SYN1", "SYN2"]] = df["COLEX"].str.split("_", expand=True)
+                print(f"len df {len(df)}")
 
-            df = pd.read_csv(filepath, lineterminator='\n', low_memory=False)
-            df[["SYN1", "SYN2"]] = df["COLEX"].str.split("_", expand=True)
-            print(f"len df {len(df)}")
+                df_syn = df[(df["SYN1"].isin(synsets)) | (df["SYN2"].isin(synsets))]
+                print(f"len df syn {len(df_syn)}")
 
-            df_syn = df[(df["SYN1"].isin(synsets)) | (df["SYN2"].isin(synsets))]
-            print(f"len df syn {len(df_syn)}")
-
-            df_syn.to_csv(writepath, index=False)
+                df_syn.to_csv(writepath, index=False)
+            except Exception as msg:
+                print(f"Exception {msg}")
 
 
 if __name__ == '__main__':
