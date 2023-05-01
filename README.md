@@ -1,7 +1,7 @@
 # ColexPhon
 Colexification and Phonetics
 
-Data and Codes for the paper :paper_with_curl:
+Data and Codes for the paper :page_with_curl:
 __Colexifications for Bootstrapping Cross-lingual Datasets:
 The Case of Phonology, Concreteness, and Affectiveness__
 
