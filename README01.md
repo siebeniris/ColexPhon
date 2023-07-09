@@ -1,5 +1,5 @@
-# ColexPhon
-Colexification and Phonetics
+# Colexification, Phonology and Norms/Ratings
+
 
 
 ## wikipron

@@ -1,5 +1,5 @@
-# ColexPhon
-Colexification and Phonetics
+# Colexification, Phonology and Norms/Ratings
+
 
 Data and Codes for the paper :page_with_curl:
 __Colexifications for Bootstrapping Cross-lingual Datasets:
