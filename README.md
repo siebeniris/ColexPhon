@@ -9,7 +9,7 @@ Yiyi Chen and Johannes Bjerva. 2023. Colexifications for Bootstrapping Cross-lin
 Final datasets: `data/finals`
 
 
-__Data and Codes for the Poster__ [Patterns of Closeness and Abstractness in Colexifications](americaNLP_poster.pdf)
+__Data and Codes for the Poster__ [Patterns of Closeness and Abstractness in Colexifications](https://github.com/siebeniris/ColexPhon/blob/main/americaNLP_poster.pdf)
 
 
 
